@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.container > * {
+  padding-bottom: 10px;
+}

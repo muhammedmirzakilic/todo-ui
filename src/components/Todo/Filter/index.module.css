@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header{
+    height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(31, 42, 75, 0.59);
+}
+
+.removeFilter{
+    height: 18px;
+    font-size: 14px;
+    color: var(--dark-blue-grey);
+    margin-left: 17px;
+    cursor: pointer;
+}
+
+.filter{
+    height: 18px;
+    font-family: MarkPro;
+    font-size: 14px;
+    color: #4a77e5;
+    margin-left: 10px;
+    cursor: pointer;
+}
