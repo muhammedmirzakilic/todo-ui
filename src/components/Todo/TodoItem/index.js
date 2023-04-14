@@ -33,7 +33,7 @@ const TodoItem = ({ todo }) => {
           type="checkbox"
           checked={todo.isCompleted}
           onClick={onChange}
-          onChange={e => console.log(e.target.checked)}
+          onChange={() => {}}
         />
         <span className={styles.title}>{todo.title}</span>
       </div>
