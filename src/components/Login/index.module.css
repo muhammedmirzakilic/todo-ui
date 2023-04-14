@@ -10,30 +10,6 @@
   background-color: #fff;
 }
 
-.logo {
-  width: 40px;
-  height: 32px;
-  margin: 0 290px 25px 0;
-  object-fit: contain;
-}
-
-.welcome {
-  height: 28px;
-  font-family: MarkPro;
-  font-size: 22px;
-  font-weight: bold;
-  color: var(--dark-blue-grey);
-}
-
-.description {
-  width: 300px;
-  height: 20px;
-  margin: 6px 30px 43px 0;
-  font-family: MarkPro;
-  font-size: 16px;
-  color: var(--cool-grey-two);
-}
-
 .redirect {
   height: 18px;
   font-family: MarkPro;

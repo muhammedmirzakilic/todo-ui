@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './index.module.css';
-import logo from '../../assests/group.svg';
 import CustomInput from '../Common/CustomInput';
 import CustomButton from '../Common/CustomButton';
+import Header from '../Common/Header';
 import { signUp } from '../../services/authService';
 import { useAuth } from '../../hooks';
-const SignUp = props => {
+
+const SignUp = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -18,9 +20,7 @@ const SignUp = props => {
 
   return (
     <div className={styles.container}>
-      <img src={logo} className={styles.logo} alt="logo" />
-      <span className={styles.welcome}>Welcome!</span>
-      <span className={styles.description}>Sign up to start using Simpledo today.</span>
+      <Header title="Welcome!" description="Sign up to start using Simpledo today." />
       <CustomInput placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} />
       <CustomInput placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
       <CustomInput
@@ -29,7 +29,9 @@ const SignUp = props => {
         value={password}
         onChange={e => setPassword(e.target.value)}
       />
-      <span className={styles.redirect}>Do have an account? Sign in.</span>
+      <Link to="/login" className={styles.redirect}>
+        <span>Do have an account? Sign in.</span>
+      </Link>
       <CustomButton text="Sign Up" onClick={onSubmit} />
     </div>
   );
