@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 471px;
+  padding: 35px 30px 63px;
+  margin-top: 33px;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.logo {
+  width: 40px;
+  height: 32px;
+  margin: 0 290px 25px 0;
+  object-fit: contain;
+}
+
+.welcome {
+  height: 28px;
+  font-family: MarkPro;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--dark-blue-grey);
+}
+
+.description {
+  width: 300px;
+  height: 20px;
+  margin: 6px 30px 43px 0;
+  font-family: MarkPro;
+  font-size: 16px;
+  color: var(--cool-grey-two);
+}
+
+.redirect {
+  height: 18px;
+  font-family: MarkPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--dark-blue-grey);
+}
